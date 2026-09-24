@@ -1,0 +1,2 @@
+# motor de risco usa apenas a biblioteca comum (Python puro)
+

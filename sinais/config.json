@@ -1,0 +1,14 @@
+{
+  "intervalo_sinais": 120,
+  "timeframe": "1d",
+  "limite_velas": 300,
+  "idade_max_dados_segundos": 86400,
+  "pre_abertura": {
+    "habilitado": true,
+    "alvos": {
+      "IBOV": { "referencia": "IBOV", "pesos": { "US500": 0.5, "USTEC": 0.3, "USDX": -0.2 } },
+      "USDBRL": { "referencia": "USDBRL", "pesos": { "USDX": 1.0, "US500": 0.2 } },
+      "BOVA11": { "referencia": "BOVA11", "pesos": { "US500": 0.5, "USTEC": 0.3, "USDX": -0.2 } }
+    }
+  }
+}

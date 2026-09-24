@@ -1,0 +1,19 @@
+{
+  "intervalo_coleta": 300,
+  "periodo_historico": "6mo",
+  "intervalo_vela": "1d",
+  "macro_intervalo": 3600,
+  "ativos": [
+    { "simbolo": "PETR4", "nome": "Petrobras PN", "brapi": "PETR4", "yf": "PETR4.SA" },
+    { "simbolo": "VALE3", "nome": "Vale ON", "brapi": "VALE3", "yf": "VALE3.SA" },
+    { "simbolo": "ITUB4", "nome": "Itaú Unibanco PN", "brapi": "ITUB4", "yf": "ITUB4.SA" },
+    { "simbolo": "BBDC4", "nome": "Bradesco PN", "brapi": "BBDC4", "yf": "BBDC4.SA" },
+    { "simbolo": "BBAS3", "nome": "Banco do Brasil ON", "brapi": "BBAS3", "yf": "BBAS3.SA" },
+    { "simbolo": "WEGE3", "nome": "WEG ON", "brapi": "WEGE3", "yf": "WEGE3.SA" }
+  ],
+  "indices": [
+    { "simbolo": "IBOV", "nome": "Ibovespa", "brapi": "^BVSP", "yf": "^BVSP" },
+    { "simbolo": "BOVA11", "nome": "ETF Ibovespa", "brapi": "BOVA11", "yf": "BOVA11.SA" }
+  ],
+  "macro_series": [432, 11, 4389, 433, 1]
+}

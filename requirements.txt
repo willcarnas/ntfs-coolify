@@ -1,0 +1,23 @@
+# Dependências agregadas de todos os módulos (para um único ambiente de dev).
+# Em produção, cada módulo tem seu próprio requirements.txt e venv (PRD secao 13).
+
+# Coleta B3 (RF-01)
+yfinance>=0.2.40
+requests>=2.31.0
+
+# Coleta cripto (RF-03/RF-05)
+ccxt>=4.3.0
+
+# Notícias (RF-07)
+feedparser>=6.0.11
+
+# Metatrader 5 (RF-02) - somente Windows; falha silenciosamente se ausente
+MetaTrader5>=5.0.45 ; sys_platform == "win32"
+
+# Dashboard (RF-11)
+fastapi>=0.111.0
+uvicorn>=0.30.0
+pydantic>=2.7.0
+
+# Saúde do sistema (RF-14)
+psutil>=5.9.0

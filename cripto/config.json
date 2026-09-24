@@ -1,0 +1,9 @@
+{
+  "intervalo_coleta": 120,
+  "timeframe": "1h",
+  "limite_velas": 300,
+  "exchange_primaria": "binance",
+  "exchanges_fallback": ["kraken", "coinbase", "okx", "bybit"],
+  "pares": ["BTC/USDT", "ETH/USDT", "SOL/USDT"],
+  "coletar_fluxo": true
+}

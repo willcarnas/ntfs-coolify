@@ -1,0 +1,28 @@
+# Ambientes e segredos
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Dados e saídas
+data/
+logs/
+*.db
+*.db-wal
+*.db-shm
+
+#tests
+tests/
+
+# Editores / SO
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

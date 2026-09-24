@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TradingSystemWCN — Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header>
+    <div class="titulo">
+      <h1>Painel de Trading</h1>
+      <span class="subtitulo">B3 · Forex · Cripto — suporte à decisão (somente leitura)</span>
+    </div>
+    <div class="header-info">
+      <div id="humor" class="badge">humor —</div>
+      <div id="saude-topo" class="badge">saúde —</div>
+      <div id="ultima-atualizacao" class="badge">aguardando…</div>
+      <button id="btn-atualizar" onclick="carregar()">Atualizar</button>
+    </div>
+  </header>
+
+  <div id="aviso-sistema" class="aviso" style="display:none"></div>
+
+  <main>
+    <section class="bloco">
+      <h2>Cotações monitoradas</h2>
+      <div id="cotacoes" class="grid"></div>
+    </section>
+
+    <section class="bloco">
+      <h2>Preço justo de pré-abertura</h2>
+      <div id="pre-abertura" class="grid"></div>
+    </section>
+
+    <section class="bloco">
+      <h2>Sinais recentes</h2>
+      <div id="sinais" class="lista"></div>
+    </section>
+
+    <section class="bloco duas-colunas">
+      <div>
+        <h2>Notícias e humor</h2>
+        <div id="noticias" class="lista"></div>
+      </div>
+      <div>
+        <h2>Saúde do sistema</h2>
+        <div id="servicos" class="lista"></div>
+        <h3>Recursos</h3>
+        <div id="saude" class="recursos"></div>
+      </div>
+    </section>
+
+    <section class="bloco">
+      <h2>Operações registradas</h2>
+      <form id="form-operacao" class="form-inline" onsubmit="registrarOperacao(event)">
+        <input name="ativo" placeholder="Ativo (ex.: PETR4)" required />
+        <input name="preco_entrada" type="number" step="any" placeholder="Preço entrada" required />
+        <input name="quantidade" type="number" step="any" value="1" placeholder="Qtd" />
+        <select name="lado"><option value="compra">compra</option><option value="venda">venda</option></select>
+        <button type="submit">Registrar entrada</button>
+      </form>
+      <div id="resumo-operacoes" class="resumo-operacoes"></div>
+      <div id="operacoes" class="lista"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Dados com fonte e timestamp auditáveis. Dados desatualizados são sinalizados.</span>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

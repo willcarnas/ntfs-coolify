@@ -1,0 +1,10 @@
+{
+  "intervalo_risco": 60,
+  "confianca_minima": 0.30,
+  "confianca_minima_desatualizado": 0.60,
+  "intervalo_minimo_segundos": 900,
+  "max_alertas_dia_ativo": 5,
+  "max_alertas_dia_total": 40,
+  "bloquear_dados_desatualizados": true,
+  "tipos_alertaveis": ["compra", "venda"]
+}

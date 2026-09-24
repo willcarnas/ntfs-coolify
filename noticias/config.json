@@ -1,0 +1,14 @@
+{
+  "intervalo_coleta": 300,
+  "limite_por_feed": 15,
+  "feeds": [
+    { "nome": "InfoMoney", "url": "https://www.infomoney.com.br/feed/" },
+    { "nome": "Reuters Business", "url": "https://feeds.reuters.com/reuters/businessNews" },
+    { "nome": "CoinDesk", "url": "https://www.coindesk.com/arc/outboundfeeds/rss/" },
+    { "nome": "Investing.com", "url": "https://www.investing.com/rss/news.rss" },
+    { "nome": "Yahoo Finance", "url": "https://finance.yahoo.com/news/rssindex" }
+  ],
+  "scraping": [
+    { "nome": "InfoMoney-Scraping", "url": "https://www.infomoney.com.br/mercados/", "padrao_link": "/mercados/" }
+  ]
+}

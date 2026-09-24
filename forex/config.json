@@ -1,0 +1,11 @@
+{
+  "intervalo_coleta": 60,
+  "timeframe": "1h",
+  "limite_velas": 300,
+  "permitir_simulado": true,
+  "modo_simulado": true,
+  "terminal_path": "",
+  "pares": ["EURUSD", "GBPUSD", "USDJPY", "USDBRL", "AUDUSD", "XAUUSD"],
+  "indices_cfd": ["US500", "USTEC", "DE40"],
+  "referencias_pre_abertura": ["USDX", "US500", "USTEC"]
+}
