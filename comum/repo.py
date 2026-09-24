@@ -455,8 +455,10 @@ def resumo_operacoes() -> dict[str, Any]:
         """
     )
     d = dict(row) if row else {}
-    fechadas = d.get("fechadas") or 0
-    d["taxa_acerto"] = round((d.get("vitorias") or 0) / fechadas * 100, 1) if fechadas else 0.0
+    for chave in ("total", "abertas", "fechadas", "vitorias", "derrotas"):
+        d[chave] = int(d.get(chave) or 0)
+    fechadas = d["fechadas"]
+    d["taxa_acerto"] = round(d["vitorias"] / fechadas * 100, 1) if fechadas else 0.0
     d["resultado"] = round(d.get("resultado") or 0.0, 2)
     return d
 
